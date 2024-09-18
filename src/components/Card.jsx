@@ -1,16 +1,14 @@
 import React from "react";
-import './Card.css'; 
+import './Card.css'; // Archivo CSS para el estilo
+import './App.css'; // Archivo CSS para el estilo
 
-const Card = ({ title, description, assignedTo, startDate, endDate }) => {
-    return (
-        <div className="card">
-            <h2>{title}</h2>
-            <p>{description}</p>
-            <p><strong>Asignado a:</strong> {assignedTo}</p>
-            <p><strong>Fecha de inicio:</strong> {startDate}</p>
-            <p><strong>Fecha de fin:</strong> {endDate}</p>
-        </div>
-    );
+
+const Card = ({ children }) => {
+  return (
+    <div className="card">
+      {children}  {/* Renderiza lo que esté entre las etiquetas <Card></Card> */}
+    </div>
+  );
 };
 
 export default Card;

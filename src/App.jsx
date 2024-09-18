@@ -1,36 +1,37 @@
 import React from 'react';
 import Card from './components/Card';
-import './components/Card.css';
-import './App.css';
-
-
-
+import './App.css'; // Asegúrate de importar el CSS
+import './components/Card.css'; // Asegúrate de importar el CSS
 
 function App() {
   return (
     <div className="App">
-      <h1>Tarjetas de Proyectos</h1> 
-      <Card 
-        title="Proyecto 1"
-        description="lorem ipsum dolor sit amet, consectetur adipiscing elit."
-        assignedTo="Enzo Bueno"
-        startDate="2024-09-18"
-        endDate="2024-10-18"
-      />
-      <Card 
-        title="Proyecto 2"
-        description="lorem ipsum dolor sit amet, consectetur adipiscing elit."
-        assignedTo="Mathias Sellanes"
-        startDate="2024-09-20"
-        endDate="2024-11-20"
-      />
-      <Card 
-        title="Proyecto 3"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-        assignedTo="Mauro Machado"
-        startDate="2024-09-25"
-        endDate="2024-12-25"
-      />
+      <h1>Tarjetas de Proyectos</h1>
+      <div className="cards-container">
+        <Card>
+          <h2>Proyecto 1</h2>
+          <p>Descripción del proyecto 1.</p>
+          <p><strong>Asignado a:</strong> Juan Pérez</p>
+          <p><strong>Fecha de inicio:</strong> 2024-09-18</p>
+          <p><strong>Fecha de fin:</strong> 2024-10-18</p>
+        </Card>
+
+        <Card>
+          <h2>Proyecto 2</h2>
+          <p>Descripción del proyecto 2.</p>
+          <p><strong>Asignado a:</strong> Ana García</p>
+          <p><strong>Fecha de inicio:</strong> 2024-09-20</p>
+          <p><strong>Fecha de fin:</strong> 2024-11-20</p>
+        </Card>
+
+        <Card>
+          <h2>Proyecto 3</h2>
+          <p>Descripción del proyecto 3.</p>
+          <p><strong>Asignado a:</strong> Carlos López</p>
+          <p><strong>Fecha de inicio:</strong> 2024-09-25</p>
+          <p><strong>Fecha de fin:</strong> 2024-12-25</p>
+        </Card>
+      </div>
     </div>
   );
 }

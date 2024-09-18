@@ -1,0 +1,33 @@
+/* Estilos para centrar el contenido */
+.App {
+  display: flex;
+  flex-direction: column; /* Para que el título y las tarjetas se dispongan en columna */
+  justify-content: center; /* Centra verticalmente */
+  align-items: center; /* Centra horizontalmente */
+  background-color: #f0f0f0; /* Fondo de la página */
+  padding: 20px;
+}
+
+div {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* Estilos para el título */
+h1 {
+  color: #333333;
+  font-style: inherit;
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Estilos para las tarjetas */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que las tarjetas se alineen en varias filas si es necesario */
+  gap: 16px; /* Espacio entre las tarjetas */
+  justify-content: center; /* Centra las tarjetas horizontalmente */
+  align-items: center; /* Centra las tarjetas verticalmente si es necesario */
+}
